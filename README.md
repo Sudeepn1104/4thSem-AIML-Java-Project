@@ -163,8 +163,3 @@ Owner Views History
 ```
 
 ---
-# Main goal
-Java OOP Practice Project
-
-```
-```
