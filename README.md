@@ -161,7 +161,7 @@ Copy and use this format for your team README.md :
 |--------|-----------|--------------|-----------------|--------|
 | Team03-CyberShield | Scrum Spartans | CyberShield | Presentation / YouTube | ⏳ Pending |
 | RapidOrder-Food_Delivery_System | RapidOrder | Food Delivery | Presentation / YouTube | ⏳ Pending |
-| Team01-ProjectName | | | | ⏳ Pending |
+| Team10-JAVAZON | JAVAZON | E-Commerce | Presentation / YouTube | ⏳ Pending |
 | Team02-ProjectName | | | | ⏳ Pending |
 | Team04-ProjectName | | | | ⏳ Pending |
 | Team05-ProjectName | | | | ⏳ Pending |
