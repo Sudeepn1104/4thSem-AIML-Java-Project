@@ -160,7 +160,7 @@ Copy and use this format for your team README.md :
 | Branch | Team Name | Project Name | Submission Type | Status |
 |--------|-----------|--------------|-----------------|--------|
 | Team03-CyberShield | Scrum Spartans | CyberShield | Presentation / YouTube | ⏳ Pending |
-| food-delivery | | Food Delivery | Presentation / YouTube | ⏳ Pending |
+| RapidOrder-Food_Delivery_System | RapidOrder | Food Delivery | Presentation / YouTube | ⏳ Pending |
 | Team01-ProjectName | | | | ⏳ Pending |
 | Team02-ProjectName | | | | ⏳ Pending |
 | Team04-ProjectName | | | | ⏳ Pending |
