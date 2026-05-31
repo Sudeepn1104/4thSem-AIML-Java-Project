@@ -1,141 +1,165 @@
-=======
-# 4thSem-AIML-Java-Project
+# Food Delivery App (Java Console Project)
 
-## Object Oriented Concepts With Java Programming
-### Department of Artificial Intelligence & Machine Learning
-#### Semester IV | Mangalore Institute of Technology & Engineering
+## Overview
+This is a simple console-based Food Delivery Application developed using Java and Object-Oriented Programming concepts.
 
----
+The project simulates:
+- Food ordering
+- Payment system
+- Delivery tracking
+- Hotel income management
+- Order history management
 
-## About
-This repository contains all Java projects submitted by 4th Semester
-AIML students as part of the Object Oriented Concepts With Java
-Programming course. Each team has uploaded their project files
-along with a README and optional YouTube demo video.
-
----
-
-## Submission Options
-
-Each team can submit in ONE of the following ways :
-
-### Option 1 - Present in Class
-- Upload your .java file and README.md to this repo
-- Present your project live in front of the class
-
-### Option 2 - YouTube Video
-- Upload your .java file and README.md to this repo
-- Record a demo video and upload it to YouTube
-- Add your YouTube link inside your team README.md
+The application is designed mainly for practicing:
+- Inheritance
+- Constructors
+- Arrays & ArrayLists
+- Encapsulation concepts
+- Static members
+- Real-time simulation using `Thread.sleep()`
 
 ---
 
-## What Every Team Must Upload (Mandatory)
-- `TeamXX_ProjectName/YourProject.java`
-- `TeamXX_ProjectName/README.md`
+# Features
 
-## Optional (Based on Submission Type)
-- YouTube demo link inside your team README.md
+## User Features
+- View hotel menu
+- Place food orders
+- Select quantity
+- Make payments
+- Track delivery in real-time
+- Generate order receipt
 
----
-
-## How To Upload Your Project
-
-1. Send your GitHub username to Sudeep on WhatsApp
-2. Accept the collaborator invite from your email
-3. Go to this repo
-4. Click `Add file` → `Create new file`
-5. In filename box type : `TeamXX_ProjectName/YourFile.java`
-   - Example : `Team02_BankSystem/BankSystem.java`
-   - Typing `/` will automatically create the folder
-6. Paste your entire Java code in the editor
-7. Scroll down → Click `Commit changes` → Confirm
-8. Repeat same steps for your `README.md`
+## Owner Features
+- View total hotel income
+- Access complete order history
 
 ---
 
-## Folder Naming Format
-TeamXX_ProjectName
-Example : Team01_CyberShield
-Team02_BankSystem
-Team03_LibrarySystem
+# Technologies Used
+
+- Java
+- OOP Concepts
+- ArrayList
+- Scanner Class
+- Thread.sleep()
+- Random ID Generation
 
 ---
 
-## Team README.md Template
+# Project Structure
 
-Every team must follow this format for their README.md :
-Project Name
-Team Members
-NameUSNName 1USN 1Name 2USN 2
-Problem Statement
-Write your problem statement here
-Technologies Used
+## `Hotel` (Abstract Class)
+Base class containing:
+- Hotel information
+- Menu
+- Prices
+- Income
+- Order history
 
-Java JDK 8 or above
-OOP Concepts
-Console Based Application
+### Variables
 
-OOP Concepts Used
-
-Inheritance
-Polymorphism
-Interface
-Encapsulation
-Static
-
-How To Run
-
-Compile : javac YourFile.java
-Run     : java YourFile
-
-Submission Type
-
- Presented in Class
- YouTube Video
-
-YouTube Link (if applicable)
-https://youtube.com/your-video-link
+```java
+static String hotelName;
+static int income;
+static ArrayList<Order> orderHistory;
+````
 
 ---
 
-## Rules
-- Only add files inside YOUR team folder
-- Do NOT touch or edit other team folders
-- Every folder must have `.java` file and `README.md`
-- One member per team uploads on behalf of whole team
-- Folder name must follow format : `TeamXX_ProjectName`
+## `Order` Class
+
+Handles:
+
+* Order creation
+* Payment
+* Delivery tracking
+* Receipt generation
+
+### Features
+
+* Random order ID
+* Payment methods
+* Delivery simulation
+* Bill generation
 
 ---
 
-## Projects
+## `Owner` Class
 
-| Team | Project Name | Members | Submission Type | Status |
-|---|---|---|---|---|
-| Team 01 | CyberShield | Anvith, Shukanth, Lloyd, Prajwal, Rashmitha, Sudeep, Shivatmi | Presentation / YouTube | ⏳ Pending |
-| Team 02 | | | | ⏳ Pending |
-| Team 03 | | | | ⏳ Pending |
-| Team 04 | | | | ⏳ Pending |
-| Team 05 | | | | ⏳ Pending |
-| Team 06 | | | | ⏳ Pending |
-| Team 07 | | | | ⏳ Pending |
-| Team 08 | | | | ⏳ Pending |
-| Team 09 | | | | ⏳ Pending |
-| Team 10 | | | | ⏳ Pending |
+Used by hotel owner to:
+
+* Check total income
+* View all customer orders
 
 ---
 
-## Course Details
+## `User` Class
 
-| Field | Details |
-|---|---|
-| Course | Object Oriented Concepts With Java Programming |
-| Department | Artificial Intelligence & Machine Learning |
-| Semester | IV |
-| Institution | Mangalore Institute of Technology & Engineering |
+Represents customer functionality:
+
+* Place orders
+* Store location
+* Interact with menu
+
+# Payment Methods
+
+The application currently supports:
+
+* UPI
+* Cash On Delivery
+* Card Payment
 
 ---
 
-## Contact
-For any issues contact : **Sudeep U Nayak** (GitHub : Sudeepn1104)
->>>>>>> d2c8381465c10508587630349c25f76e3bc9509b
+# Delivery Tracking
+
+The project simulates delivery tracking using:
+
+```java
+Thread.sleep()
+```
+
+Locations are displayed one-by-one with delay similar to real delivery apps.
+
+# Concepts Practiced
+
+## OOP Concepts
+
+* Inheritance
+* Abstraction
+* Constructors
+* Method Reuse
+
+## Java Concepts
+
+* Arrays
+* ArrayList
+* Static Variables
+* Exception Handling
+* Loops
+* Scanner Input
+
+---
+
+# Sample Flow
+
+```text
+User Opens App
+      ↓
+Menu Displayed
+      ↓
+Food Ordered
+      ↓
+Payment Completed
+      ↓
+Income Updated
+      ↓
+Order Saved
+      ↓
+Delivery Tracking
+      ↓
+Owner Views History
+```
+
+---
