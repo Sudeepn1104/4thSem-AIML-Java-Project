@@ -1,3 +1,4 @@
+package FoodDeliveryApp;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
@@ -10,7 +11,7 @@ abstract class Hotel {
     int quantity;
     int choice;
     String [] menu = {"Masala Dose", "Coffe", "Biriyani", "Noddles", "Ice cream"};
-    int [] prices = {60, 20, 120, 100, 60};
+    int [] prices = {60, 30, 120, 80, 100};
     String ownerName;
 
     Hotel() {
@@ -29,7 +30,7 @@ abstract class Hotel {
     void DisplayMenu() {
         System.out.println("Hotel " + hotelName + " Menu :");
         for(int i = 1; i <= menu.length; i++) {
-            System.out.println(i + "] " + menu[i-1]);
+            System.out.println(i + "] " + menu[i-1] + "\tPrice : " + prices[i-1]);
         }
         System.out.println();
     }
@@ -42,6 +43,8 @@ class Order extends Hotel{
     String userName;
     String paymentMethod;
     boolean paymentStatus = false;
+    
+    Scanner sc = new Scanner(System.in);
 
     Order(int id, int quantity, int choice, String username, String []location) {
         super(quantity, choice);
@@ -55,7 +58,7 @@ class Order extends Hotel{
     }
 
     void generateOrderInfo() {
-        System.out.println("+--------------------------------------+");
+        System.out.println("\n+------------Reciept----------------+");
         System.out.println("Hotel : " + hotelName);
         System.out.println("User Name : " + userName);
         System.out.print("Location : ");
@@ -67,7 +70,9 @@ class Order extends Hotel{
         System.out.println("Food : " + menu[choice-1]);
         System.out.println("Quantity :" + quantity);
         System.out.println("Payment : " + toPay);
-        System.out.println("+--------------------------------------+");
+        System.out.println("Payment Status: " + paymentStatus);
+        System.out.println("Payment Method : " + paymentMethod);
+        System.out.println("+------------------------------------+");
     }
 
     void trackDelivery() {
@@ -75,10 +80,9 @@ class Order extends Hotel{
 
         for(String loc : location) {
             if(loc != null) {
-                System.out.println("Reached : " + loc);
-                char [] dot = {'|', '|', '|', '|', '|'} ;
+                char [] dot = {'.', '.', '.', '.', '.', '.'};
                 for(char d : dot) {
-                    System.out.println(d);
+                    System.out.print(d);
                     try {
                         Thread.sleep(600);
                     } 
@@ -86,8 +90,10 @@ class Order extends Hotel{
                         System.out.println("Tracking interrupted");
                     }
                 }
+                System.out.println("\n-> Reached : " + loc);
+
                 try {
-                Thread.sleep(100);
+                Thread.sleep(1000);
                 } 
                 catch(InterruptedException e) {
                     System.out.println("Tracking interrupted");
@@ -97,8 +103,6 @@ class Order extends Hotel{
         System.out.println("\nOrder Delivered Successfully!");
     }
     void makePayment() {
-        Scanner sc = new Scanner(System.in);
-
         System.out.println("\nSelect Payment Method");
         System.out.println("1] UPI");
         System.out.println("2] Cash On Delivery");
@@ -129,8 +133,6 @@ class Order extends Hotel{
         income += toPay;
 
         orderHistory.add(this);
-
-        System.out.println("\nPayment Successful using " + paymentMethod);
     }
 }
 
@@ -143,7 +145,6 @@ class Owner extends Hotel{
         System.out.println("Hotel " + hotelName + " income :" + income);
     }
     void showOrderHistory() {
-
         for(Order o : orderHistory) {
             System.out.println("\n----------------");
             System.out.println("User : " + o.userName);
@@ -188,16 +189,19 @@ class User {
 
 public class FoodDeliveryApp {
     public static void main(String[] args) {
-        Owner owner = new Owner("Peak Maters", "John");
-        User user1 = new User("Preetham");
+        Owner owner = new Owner("Arogya", "Ram");
+        User user1 = new User("Shahsank");
+        User user2 = new User("Yashwanth");
+
         user1.order();
-        user1.order.generateOrderInfo();
         user1.order.trackDelivery();
         user1.order.makePayment();
+        user1.order.generateOrderInfo();
 
-        User user2 = new User("John");
         user2.order();
+        user2.order.trackDelivery();
         user2.order.makePayment();
+        user2.order.generateOrderInfo();
         
         owner.DisplayIncome();
         owner.showOrderHistory();
