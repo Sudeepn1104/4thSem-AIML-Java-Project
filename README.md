@@ -113,7 +113,7 @@ https://youtube.com/your-video-link
 | Team | Project Name | Members | Submission Type | Status |
 |---|---|---|---|---|
 | Team 01 | CyberShield | Anvith, Shukanth, Lloyd, Prajwal, Rashmitha, Sudeep, Shivatmi | Presentation / YouTube | ⏳ Pending |
-| Team 02 | | | | ⏳ Pending |
+| Team 02 | FoodDeliveryApp | Shashank, Preetham, Karthik, Barath, Manoj, Yashwanth | YouTube | ⏳ Pending |
 | Team 03 | | | | ⏳ Pending |
 | Team 04 | | | | ⏳ Pending |
 | Team 05 | | | | ⏳ Pending |
@@ -138,4 +138,3 @@ https://youtube.com/your-video-link
 
 ## Contact
 For any issues contact : **Sudeep U Nayak** (GitHub : Sudeepn1104)
->>>>>>> d2c8381465c10508587630349c25f76e3bc9509b
