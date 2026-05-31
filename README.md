@@ -1,4 +1,3 @@
-
 # 4thSem-AIML-Java-Project
 
 ## Object Oriented Concepts With Java Programming
@@ -10,8 +9,8 @@
 ## About
 This repository contains all Java projects submitted by 4th Semester
 AIML students as part of the Object Oriented Concepts With Java
-Programming course. Each team has uploaded their project files
-along with a README and optional YouTube demo video.
+Programming course. Each team has created a separate branch and
+uploaded their project files along with documentation.
 
 ---
 
@@ -30,111 +29,166 @@ Each team can submit in ONE of the following ways :
 
 ---
 
-## What Every Team Must Upload (Mandatory)
-- `TeamXX_ProjectName/YourProject.java`
-- `TeamXX_ProjectName/README.md`
-
-## Optional (Based on Submission Type)
-- YouTube demo link inside your team README.md
+## What Every Team Must Upload
+- YourProject.java   —  your source code
+- README.md          —  project description and details
 
 ---
 
 ## How To Upload Your Project
 
-1. Send your GitHub username to Sudeep on WhatsApp
-2. Accept the collaborator invite from your email
-3. Go to this repo
-4. Click `Add file` → `Create new file`
-5. In filename box type : `TeamXX_ProjectName/YourFile.java`
-   - Example : `Team02_BankSystem/BankSystem.java`
-   - Typing `/` will automatically create the folder
-6. Paste your entire Java code in the editor
-7. Scroll down → Click `Commit changes` → Confirm
-8. Repeat same steps for your `README.md`
+### Method 1 - Using Git Bash
+
+Step 1 - Open Git Bash inside your project folder
+
+Step 2 - Run these commands one by one
+
+    git init
+    git add .
+    git commit -m "Added TeamXX-ProjectName"
+    git remote add origin https://github.com/Sudeepn1104/4thSem-AIML-Java-Project.git
+    git checkout -b TeamXX-ProjectName
+    git push -u origin TeamXX-ProjectName
+
+Step 3 - Enter your GitHub username and
+         Personal Access Token when prompted
+
+### Method 2 - Using GitHub Website
+
+Step 1 - Go to this repo
+Step 2 - Click branch dropdown (top left)
+Step 3 - Type your branch name
+Step 4 - Click Create branch
+Step 5 - Click Add file → Create new file
+Step 6 - Type filename → Paste your code → Commit
+Step 7 - Repeat same for README.md
 
 ---
 
-## Folder Naming Format
-TeamXX_ProjectName
-Example : Team01_CyberShield
-Team02_BankSystem
-Team03_LibrarySystem
+## Branch Naming Format
+
+    TeamXX-ProjectName
+
+    Examples :
+    Team01-BankSystem
+    Team02-LibrarySystem
+    Team03-CyberShield
+    Team04-HospitalSystem
+    Team05-FoodDelivery
+
+---
+
+## How To Get Collaborator Access
+
+Step 1 - Create a GitHub account
+         https://github.com
+
+Step 2 - Send your GitHub username to
+         Sudeep U Nayak on WhatsApp
+
+Step 3 - Accept the collaborator invite
+         from your email
+
+Step 4 - Follow the upload steps above
 
 ---
 
 ## Team README.md Template
 
-Every team must follow this format for their README.md :
-Project Name
-Team Members
-NameUSNName 1USN 1Name 2USN 2
-Problem Statement
-Write your problem statement here
-Technologies Used
+Copy and use this format for your team README.md :
 
-Java JDK 8 or above
-OOP Concepts
-Console Based Application
+    # Project Name
 
-OOP Concepts Used
+    ## Team Name
+    Write your team name here
 
-Inheritance
-Polymorphism
-Interface
-Encapsulation
-Static
+    ## Team Members
+    | Name       | USN        |
+    |------------|------------|
+    | Member 1   | USN Here   |
+    | Member 2   | USN Here   |
+    | Member 3   | USN Here   |
+    | Member 4   | USN Here   |
+    | Member 5   | USN Here   |
 
-How To Run
+    ## Problem Statement
+    Write your problem statement here
 
-Compile : javac YourFile.java
-Run     : java YourFile
+    ## Technologies Used
+    - Java JDK 8 or above
+    - Object Oriented Programming
+    - Console Based Application
 
-Submission Type
+    ## OOP Concepts Used
+    - Inheritance
+    - Polymorphism
+    - Interface
+    - Encapsulation
+    - Static Methods
 
- Presented in Class
- YouTube Video
+    ## Algorithm
+    Write brief steps of your program here
 
-YouTube Link (if applicable)
-https://youtube.com/your-video-link
+    ## How To Run
+    Step 1 : Compile
+             javac YourFile.java
+    Step 2 : Run
+             java YourFile
+
+    ## Submission Type
+    - [ ] Presented in Class
+    - [ ] YouTube Video
+
+    ## YouTube Link
+    https://youtube.com/your-video-link
 
 ---
 
 ## Rules
-- Only add files inside YOUR team folder
-- Do NOT touch or edit other team folders
-- Every folder must have `.java` file and `README.md`
-- One member per team uploads on behalf of whole team
-- Folder name must follow format : `TeamXX_ProjectName`
+
+- Each team must create their OWN branch
+- Do NOT push files to main branch
+- Do NOT touch or edit other team branches
+- Every branch must have .java file and README.md
+- Only ONE member per team needs to upload
+- Follow branch naming format : TeamXX-ProjectName
 
 ---
 
 ## Projects
 
-| Team | Project Name | Members | Submission Type | Status |
-|---|---|---|---|---|
-| Team 01 | CyberShield | Anvith, Shukanth, Lloyd, Prajwal, Rashmitha, Sudeep, Shivatmi | Presentation / YouTube | ⏳ Pending |
-| Team 02 | FoodDeliveryApp | Shashank, Preetham, Karthik, Barath, Manoj, Yashwanth | YouTube | ⏳ Pending |
-| Team 03 | | | | ⏳ Pending |
-| Team 04 | | | | ⏳ Pending |
-| Team 05 | | | | ⏳ Pending |
-| Team 06 | | | | ⏳ Pending |
-| Team 07 | | | | ⏳ Pending |
-| Team 08 | | | | ⏳ Pending |
-| Team 09 | | | | ⏳ Pending |
-| Team 10 | | | | ⏳ Pending |
+| Branch | Team Name | Project Name | Submission Type | Status |
+|--------|-----------|--------------|-----------------|--------|
+| Team03-CyberShield | Scrum Spartans | CyberShield | Presentation / YouTube | ⏳ Pending |
+| food-delivery | | Food Delivery | Presentation / YouTube | ⏳ Pending |
+| Team01-ProjectName | | | | ⏳ Pending |
+| Team02-ProjectName | | | | ⏳ Pending |
+| Team04-ProjectName | | | | ⏳ Pending |
+| Team05-ProjectName | | | | ⏳ Pending |
+| Team06-ProjectName | | | | ⏳ Pending |
+| Team07-ProjectName | | | | ⏳ Pending |
+| Team08-ProjectName | | | | ⏳ Pending |
+| Team09-ProjectName | | | | ⏳ Pending |
+| Team10-ProjectName | | | | ⏳ Pending |
 
 ---
 
 ## Course Details
 
-| Field | Details |
-|---|---|
-| Course | Object Oriented Concepts With Java Programming |
-| Department | Artificial Intelligence & Machine Learning |
-| Semester | IV |
-| Institution | Mangalore Institute of Technology & Engineering |
+| Field       | Details                                          |
+|-------------|--------------------------------------------------|
+| Course      | Object Oriented Concepts With Java Programming   |
+| Department  | Artificial Intelligence & Machine Learning       |
+| Semester    | IV                                               |
+| Institution | Mangalore Institute of Technology & Engineering  |
+| Academic Year | 2024 - 2025                                    |
 
 ---
 
 ## Contact
-For any issues contact : **Sudeep U Nayak** (GitHub : Sudeepn1104)
+
+For collaborator access or any issues contact :
+
+Name   : Sudeep U Nayak
+GitHub : Sudeepn1104
+USN    : 4MT24AI054
