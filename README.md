@@ -1,140 +1,79 @@
-=======
-# 4thSem-AIML-Java-Project
+# CyberShield - Cyber Crime Reporting & Tracking System
 
-## Object Oriented Concepts With Java Programming
-### Department of Artificial Intelligence & Machine Learning
-#### Semester IV | Mangalore Institute of Technology & Engineering
+## Team Members
 
----
+| Name | USN |
+|------|-----|
+| Anvith | 4MT24AI004 |
+| Shukanth Kullampady | 4MT24AI019 |
+| Lloyd Dsouza | 4MT24AI024 |
+| Prajwal R Shenoy | 4MT24AI033 |
+| Rashmitha Kundar | 4MT24AI040 |
+| Sudeep U Nayak | 4MT24AI054 |
+| Shivatmi D | 4MT24AI060 |
 
-## About
-This repository contains all Java projects submitted by 4th Semester
-AIML students as part of the Object Oriented Concepts With Java
-Programming course. Each team has uploaded their project files
-along with a README and optional YouTube demo video.
+## Problem Statement
 
----
+CyberShield is a comprehensive cyber crime reporting and tracking system that enables citizens to report cyber crimes (phishing, OTP fraud, fake websites) through a dedicated citizen portal. The system allows authorized cyber crime department officers to view, track, and update the status of complaints. The application provides cyber safety tips to educate users about common cyber threats and prevention measures.
 
-## Submission Options
+## Technologies Used
 
-Each team can submit in ONE of the following ways :
+- **Java** - JDK 8 or above
+- **OOP Concepts** - Console Based Application
 
-### Option 1 - Present in Class
-- Upload your .java file and README.md to this repo
-- Present your project live in front of the class
+## OOP Concepts Used
 
-### Option 2 - YouTube Video
-- Upload your .java file and README.md to this repo
-- Record a demo video and upload it to YouTube
-- Add your YouTube link inside your team README.md
+- **Inheritance** - CyberCrime parent class with child classes (Phishing, OTPFraud, FakeWebsite)
+- **Polymorphism** - Method overriding in crime reporting classes
+- **Interface** - Notification interface for sending notifications
+- **Encapsulation** - Data hiding using private attributes and public methods
+- **Static** - SafetyTips class with static methods and OFFICER credentials
 
----
+## Key Features
 
-## What Every Team Must Upload (Mandatory)
-- `TeamXX_ProjectName/YourProject.java`
-- `TeamXX_ProjectName/README.md`
+- **Citizen Portal**
+  - Register cyber crime complaints
+  - View personal complaints
+  - Access cyber safety tips
+  - View user profile
 
-## Optional (Based on Submission Type)
-- YouTube demo link inside your team README.md
+- **Cyber Crime Department Portal**
+  - Secure login with Officer ID and Password
+  - View all complaints
+  - Update complaint status (Pending, Under Investigation, Resolved)
 
----
+- **Crime Types Supported**
+  - Phishing
+  - OTP Fraud
+  - Fake Website
 
-## How To Upload Your Project
+## How To Run
 
-1. Send your GitHub username to Sudeep on WhatsApp
-2. Accept the collaborator invite from your email
-3. Go to this repo
-4. Click `Add file` → `Create new file`
-5. In filename box type : `TeamXX_ProjectName/YourFile.java`
-   - Example : `Team02_BankSystem/BankSystem.java`
-   - Typing `/` will automatically create the folder
-6. Paste your entire Java code in the editor
-7. Scroll down → Click `Commit changes` → Confirm
-8. Repeat same steps for your `README.md`
+**Compile:**
+```
+javac CyberShield.java
+```
 
----
+**Run:**
+```
+java CyberShield
+```
 
-## Folder Naming Format
-TeamXX_ProjectName
-Example : Team01_CyberShield
-Team02_BankSystem
-Team03_LibrarySystem
+### Default Department Login Credentials
+- Officer ID: `CYB101`
+- Password: `admin123`
 
----
+## Submission Type
 
-## Team README.md Template
+- Presented in Class
+- YouTube Video (if applicable)
 
-Every team must follow this format for their README.md :
-Project Name
-Team Members
-NameUSNName 1USN 1Name 2USN 2
-Problem Statement
-Write your problem statement here
-Technologies Used
-
-Java JDK 8 or above
-OOP Concepts
-Console Based Application
-
-OOP Concepts Used
-
-Inheritance
-Polymorphism
-Interface
-Encapsulation
-Static
-
-How To Run
-
-Compile : javac YourFile.java
-Run     : java YourFile
-
-Submission Type
-
- Presented in Class
- YouTube Video
-
-YouTube Link (if applicable)
+## YouTube Link 
 https://youtube.com/your-video-link
 
 ---
 
-## Rules
-- Only add files inside YOUR team folder
-- Do NOT touch or edit other team folders
-- Every folder must have `.java` file and `README.md`
-- One member per team uploads on behalf of whole team
-- Folder name must follow format : `TeamXX_ProjectName`
-
----
-
-## Projects
-
-| Team | Project Name | Members | Submission Type | Status |
-|---|---|---|---|---|
-| Team 01 | CyberShield | Anvith, Shukanth, Lloyd, Prajwal, Rashmitha, Sudeep, Shivatmi | Presentation / YouTube | ⏳ Pending |
-| Team 02 | FoodDeliveryApp | Shashank, Preetham, Karthik, Barath, Manoj, Yashwanth | YouTube | ⏳ Pending |
-| Team 03 | | | | ⏳ Pending |
-| Team 04 | | | | ⏳ Pending |
-| Team 05 | | | | ⏳ Pending |
-| Team 06 | | | | ⏳ Pending |
-| Team 07 | | | | ⏳ Pending |
-| Team 08 | | | | ⏳ Pending |
-| Team 09 | | | | ⏳ Pending |
-| Team 10 | | | | ⏳ Pending |
-
----
-
-## Course Details
-
-| Field | Details |
-|---|---|
-| Course | Object Oriented Concepts With Java Programming |
-| Department | Artificial Intelligence & Machine Learning |
-| Semester | IV |
-| Institution | Mangalore Institute of Technology & Engineering |
-
----
-
-## Contact
-For any issues contact : **Sudeep U Nayak** (GitHub : Sudeepn1104)
+**Course:** Object Oriented Concepts With Java Programming  
+**Department:** Artificial Intelligence & Machine Learning  
+**Semester:** IV  
+**Institution:** Mangalore Institute of Technology & Engineering
