@@ -18,16 +18,19 @@ CyberShield is a comprehensive cyber crime reporting and tracking system that en
 
 ## Technologies Used
 
-- **Java** - JDK 8 or above
-- **OOP Concepts** - Console Based Application
+- Java JDK 8 or above
+- OOP Concepts
+- Console Based Application
 
 ## OOP Concepts Used
 
 - **Inheritance** - CyberCrime parent class with child classes (Phishing, OTPFraud, FakeWebsite)
-- **Polymorphism** - Method overriding in crime reporting classes
-- **Interface** - Notification interface for sending notifications
-- **Encapsulation** - Data hiding using private attributes and public methods
-- **Static** - SafetyTips class with static methods and OFFICER credentials
+- **Polymorphism** - Method overriding in crime reporting classes (reportCrime() method)
+- **Interface** - Notification interface for sending notifications with EmailNotification implementation
+- **Encapsulation** - Data hiding using access modifiers in User, Complaint, and CyberCrime classes
+- **Static** - SafetyTips class with static methods, OFFICER_ID and OFFICER_PASSWORD static variables
+- **Composition/Association** - User, Complaint, and CyberCrime objects used within main class
+- **Abstraction** - Abstract behavior through interfaces and parent class methods
 
 ## Key Features
 
@@ -59,16 +62,17 @@ javac CyberShield.java
 java CyberShield
 ```
 
-### Default Department Login Credentials
-- Officer ID: `CYB101`
-- Password: `admin123`
+**Default Department Login Credentials:**
+- Officer ID: CYB101
+- Password: admin123
 
 ## Submission Type
 
 - Presented in Class
-- YouTube Video (if applicable)
+- YouTube Video
 
 ## YouTube Link 
+
 https://youtube.com/your-video-link
 
 ---
