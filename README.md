@@ -1,194 +1,142 @@
-# 4thSem-AIML-Java-Project
+✈️ Travel Management System
 
-## Object Oriented Concepts With Java Programming
-### Department of Artificial Intelligence & Machine Learning
-#### Semester IV | Mangalore Institute of Technology & Engineering
+👥 Team Members
 
----
+Name| USN
+Muhammed Razeen (Team Lead)| 4MT24AI028
+Dhanush Sharma| 4MT24AI014
+Alok M Poojary| 4MT24AI001
+Sheikh Rifa Fathima| 4MT24AI048
+Harshita Saboo| 4MT24AI015
+Priyansh V Poojary| 4MT24AI037
+Prakruti Hiremath| 4MT25AI405
 
-## About
-This repository contains all Java projects submitted by 4th Semester
-AIML students as part of the Object Oriented Concepts With Java
-Programming course. Each team has created a separate branch and
-uploaded their project files along with documentation.
 
----
 
-## Submission Options
+🎯 Problem Statement
 
-Each team can submit in ONE of the following ways :
+Travellers often find it difficult to estimate travel time, travel cost, and select the most suitable mode of transportation before starting a journey. The Travel Management System provides a simple Java-based solution that calculates travel duration, travel expenses, travel category, and recommends an appropriate vehicle based on the distance entered by the user.
 
-### Option 1 - Present in Class
-- Upload your .java file and README.md to this repo
-- Present your project live in front of the class
 
-### Option 2 - YouTube Video
-- Upload your .java file and README.md to this repo
-- Record a demo video and upload it to YouTube
-- Add your YouTube link inside your team README.md
 
----
+🛠️ Technologies Used
 
-## What Every Team Must Upload
-- YourProject.java   —  your source code
-- README.md          —  project description and details
+- Java (JDK 8 or above)
+- Object-Oriented Programming (OOP)
+- Console-Based Application
+- Scanner Class
+- Exception Handling
 
----
 
-## How To Upload Your Project
 
-### Method 1 - Using Git Bash
+📚 OOP Concepts Used
 
-Step 1 - Open Git Bash inside your project folder
+✅ Inheritance
 
-Step 2 - Run these commands one by one
+✅ Polymorphism (Method Overloading & Method Overriding)
 
-    git init
-    git add .
-    git commit -m "Added TeamXX-ProjectName"
-    git remote add origin https://github.com/Sudeepn1104/4thSem-AIML-Java-Project.git
-    git checkout -b TeamXX-ProjectName
-    git push -u origin TeamXX-ProjectName
+✅ Constructor
 
-Step 3 - Enter your GitHub username and
-         Personal Access Token when prompted
+✅ Static Variable
 
-### Method 2 - Using GitHub Website
+✅ Final Variable
 
-Step 1 - Go to this repo
-Step 2 - Click branch dropdown (top left)
-Step 3 - Type your branch name
-Step 4 - Click Create branch
-Step 5 - Click Add file → Create new file
-Step 6 - Type filename → Paste your code → Commit
-Step 7 - Repeat same for README.md
+✅ this Keyword
 
----
+✅ super Keyword
 
-## Branch Naming Format
+✅ Exception Handling
 
-    TeamXX-ProjectName
 
-    Examples :
-    Team01-BankSystem
-    Team02-LibrarySystem
-    Team03-CyberShield
-    Team04-HospitalSystem
-    Team05-FoodDelivery
 
----
+📖 Project Description
 
-## How To Get Collaborator Access
+The Travel Management System is a Java-based application designed to help users plan journeys efficiently. The system accepts traveller details such as name, source, destination, and travel distance. Based on the entered distance, it calculates travel time, travel cost, identifies the travel category, and recommends the most suitable mode of transportation.
 
-Step 1 - Create a GitHub account
-         https://github.com
 
-Step 2 - Send your GitHub username to
-         Sudeep U Nayak on WhatsApp
 
-Step 3 - Accept the collaborator invite
-         from your email
+✨ Features
 
-Step 4 - Follow the upload steps above
+⏱️ Travel Time Calculation
 
----
+- Bike
+- Car
+- Train
+- Plane
 
-## Team README.md Template
+💰 Travel Cost Estimation
 
-Copy and use this format for your team README.md :
+Provides estimated travel costs for different modes of transport.
 
-    # Project Name
+🗺️ Travel Category Identification
 
-    ## Team Name
-    Write your team name here
+- Local Travel
+- Intercity Travel
+- Long Distance Travel
 
-    ## Team Members
-    | Name       | USN        |
-    |------------|------------|
-    | Member 1   | USN Here   |
-    | Member 2   | USN Here   |
-    | Member 3   | USN Here   |
-    | Member 4   | USN Here   |
-    | Member 5   | USN Here   |
+🚆 Vehicle Suggestion
 
-    ## Problem Statement
-    Write your problem statement here
+Recommends the most suitable vehicle based on distance.
 
-    ## Technologies Used
-    - Java JDK 8 or above
-    - Object Oriented Programming
-    - Console Based Application
+⚠️ Exception Handling
 
-    ## OOP Concepts Used
-    - Inheritance
-    - Polymorphism
-    - Interface
-    - Encapsulation
-    - Static Methods
+Handles invalid inputs and prevents program crashes.
 
-    ## Algorithm
-    Write brief steps of your program here
 
-    ## How To Run
-    Step 1 : Compile
-             javac YourFile.java
-    Step 2 : Run
-             java YourFile
 
-    ## Submission Type
-    - [ ] Presented in Class
-    - [ ] YouTube Video
+🏗️ Class Structure
 
-    ## YouTube Link
-    https://youtube.com/your-video-link
+Travel Class
 
----
+- Travel calculations
+- Cost estimation
+- Travel categorization
+- Vehicle suggestion
+- Static and final variables
 
-## Rules
+Trip Class
 
-- Each team must create their OWN branch
-- Do NOT push files to main branch
-- Do NOT touch or edit other team branches
-- Every branch must have .java file and README.md
-- Only ONE member per team needs to upload
-- Follow branch naming format : TeamXX-ProjectName
+- Extends Travel Class
+- Demonstrates Inheritance
+- Demonstrates Method Overriding
 
----
+TravelDemo2 Class
 
-## Projects
+- Contains main() method
+- Handles user interaction
+- Displays results
 
-| Branch | Team Name | Project Name | Submission Type | Status |
-|--------|-----------|--------------|-----------------|--------|
-| Team03-CyberShield | Scrum Spartans | CyberShield | Presentation / YouTube | ⏳ Pending |
-| RapidOrder-Food_Delivery_System | RapidOrder | Food Delivery | Presentation / YouTube | ⏳ Pending |
-| Team10-JAVAZON | JAVAZON | E-Commerce | Presentation / YouTube | ⏳ Pending |
-| TEAM_08_Education_System |CodeHard | Education System  | Presentation / YouTube  | ⏳ Pending |
-| Team04-ProjectName | | | | ⏳ Pending |
-| Team05-ProjectName | | | | ⏳ Pending |
-| Team06-ProjectName | | | | ⏳ Pending |
-| Team07-ProjectName | | | | ⏳ Pending |
-| Team08-ProjectName | | | | ⏳ Pending |
-| Team09-ProjectName | | | | ⏳ Pending |
-| Team10-ProjectName | | | | ⏳ Pending |
 
----
 
-## Course Details
+▶️ How To Run
 
-| Field       | Details                                          |
-|-------------|--------------------------------------------------|
-| Course      | Object Oriented Concepts With Java Programming   |
-| Department  | Artificial Intelligence & Machine Learning       |
-| Semester    | IV                                               |
-| Institution | Mangalore Institute of Technology & Engineering  |
-| Academic Year | 2024 - 2025                                    |
+Compile
 
----
+javac TravelDemo2.java
 
-## Contact
+Run
 
-For collaborator access or any issues contact :
+java TravelDemo2
 
-Name   : Sudeep U Nayak
-GitHub : Sudeepn1104
-USN    : 4MT24AI054
+
+
+📸 Sample Output
+
+(Insert your output screenshot here)
+
+
+
+🎥 Submission Type
+
+
+- YouTube Video Presentation
+
+🔗 YouTube Link
+
+
+
+
+
+✅ Conclusion
+
+The Travel Management System successfully demonstrates the practical implementation of Java and Object-Oriented Programming concepts. It calculates travel time, travel cost, travel category, and vehicle recommendations while showcasing important OOP principles such as inheritance, polymorphism, constructors, static variables, final variables, and exception handling.
