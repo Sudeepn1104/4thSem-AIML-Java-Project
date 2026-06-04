@@ -168,7 +168,7 @@ Copy and use this format for your team README.md :
 | Team06-ProjectName | | | | ⏳ Pending |
 | Team07-ProjectName | | | | ⏳ Pending |
 | Team08-ProjectName | | | | ⏳ Pending |
-| Team09-IPL_Ticket_booking | Overrider | IPL Ticket Booking | Presentation / YouTube | ⏳ Pending |
+| Team09-IPL_Ticket_booking | Overrider | IPL Ticket Booking | Presentation / YouTube | ⏳ completed |
 | Team10-ProjectName | | | | ⏳ Pending |
 
 ---
